@@ -40,9 +40,6 @@ switch (x){
 
 void Switch_hun(int x){
 switch (x){
-						case (0):
-							cout<<"zero";
-							break;
 						case (1):
 							cout<<"uno";
 							break;
@@ -179,39 +176,75 @@ else if	(x>=900 && x<1000){
 	
 }
 void Switch_tenth(int x){
-if (x>=1000 && x<2000){
+if (x>=1000 && x<1100){
+	cout<<"mille";
+	Switch_hun(x-1000);
+}	
+else if (x>=2000 && x<2100){
+	cout<<"duemila";
+	Switch_hun(x-2000);
+}
+else if (x>=3000 && x<3100){
+	cout<<"tremila";
+	Switch_hun(x-3000);
+}
+else if (x>=4000 && x<4100){
+	cout<<"quattromila";
+	Switch_hun(x-4000);
+}
+else if (x>=5000 && x<5100){
+	cout<<"cinquemila";
+	Switch_hun(x-5000);
+}
+else if (x>=6000 && x<6100){
+	cout<<"seimila";
+	Switch_hun(x-6000);
+}
+else if (x>=7000 && x<7100){
+	cout<<"settemila";
+	Switch_hun(x-7000);
+}
+else if (x>=8000 && x<8100){
+	cout<<"ottomila";
+	Switch_hun(x-8000);
+}
+else if (x>=9000 && x<9100){
+	cout<<"duemila";
+	Switch_hun(x-9000);
+}
+else if (x>=1100 && x<2000){
 	cout<<"mille";
 	Switch_thou(x-1000);
 }
-else if (x>=2000 && x<3000){
+else if (x>=2100 && x<3000){
 	cout<<"duemila";
 	Switch_thou(x-2000);
 }
-else if (x>=3000 && x<4000){
+else if (x>=3100 && x<4000){
 	cout<<"tremila";
 	Switch_thou(x-3000);
 }
-else if  (x>=4000 && x<5000){
+else if  (x>=4100 && x<5000){
 	cout<<"quattromila";
 	Switch_thou(x-4000);
 }
-else if (x>=5000 && x<6000){
+else if (x>=5100 && x<6000){
 	cout<<"cinquemila";
 	Switch_thou(x-5000);
 }	
-else if	(x>=6000 && x<7000){
+else if	(x>=6100 && x<7000){
 	cout<<"seimila";
 	Switch_thou(x-6000);
 }
-else if  (x>=7000 && x<8000){
+else if  (x>=7100 && x<8000){
 	cout<<"settemila";
 	Switch_thou(x-7000);	
 }
-else if (x>=8000 && x<9000){
+else if (x>=8100 && x<9000){
 	cout<<"ottomila";
 	Switch_thou(x-8000);
 }	
-else if	(x>=9000 && x<10000){
+else if	(x>=9100 && x<10000){
 	cout<<"novemila";
 	Switch_thou(x-9000);
 }	
@@ -228,6 +261,10 @@ int main(){
 	if (x<10000){
 		if (x<1000){
 			if (x<100){
+				if (x==0){
+					cout<<"zero";
+				}
+				else
 					 Switch_hun(x);
 					 cout<<"\n";														
 				}
@@ -242,10 +279,11 @@ int main(){
 		}	
 		}
 	else {
-	cout<<"numero troppo grande";	
+	cout<<"numero troppo grande, you don't speak italian right";	
 	}   
 	Sleep(2000);
  	cout<<endl<<"vorresti avere un altro numero scritto in lettere perche' sei scemo?"<<endl<<"y/n:\n";
  	cin>>c;
- } while (c== 'y'); 	
+ } while (c== 'y'); 
+ return 0;	
 }
