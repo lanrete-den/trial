@@ -1,3 +1,5 @@
+//progr: Locicero Giorgio aka Dio pisello aka i_want_to_die
+//programma per far apparire a video i numeri in lettere
 #include<iostream>
 #include<cstdlib>
 #include<string>
