@@ -1,3 +1,5 @@
+//progr:Giorgio Locicero aka josura aka divinità folle
+//dice and gambling
 #include<iostream>
 #include<cstdlib>
 #include<time.h>
